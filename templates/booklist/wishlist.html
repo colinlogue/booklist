@@ -1,0 +1,6 @@
+<ul>
+  {% for item in items %}
+  <li>{{ item.title }}
+    {% if item.wishlist_note %} - {{ item.wishlist_note }}{% endif %}</li>
+  {% endfor %}
+</ul>
